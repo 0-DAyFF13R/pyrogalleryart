@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/images/site-logo-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="facebook-domain-verification" content="eb9p3prxhgtc8l6xqyt5dbfofxs2bn">
+    <title>Pyro Gallery Art</title>
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1223670444742669');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1223670444742669&ev=PageView&noscript=1" /></noscript>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Header -->
+
+        <header class="header  header--dark" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" data-scroll="#intro">
+                        <img class="img" src="assets/images/site-logo.png" width="70px" height="70px" alt="PyroGallery">
+                    </a>
+
+                    <nav class="lang-menu-2" id="langNav">
+                        <ul>
+                            <li>
+                                <div class="lang-menu-2__div">
+                                    <a href="#"><button class="translate"><img
+                                                src="assets/images/languages/languages.svg" alt="ruflag" width="40px"
+                                                height="40px"></button></a>
+                                    <div class="arrow-down"></div>
+                                </div>
+                                <ul class="languages-menu">
+                                    <li><a class="header-item-lang-lt" href="#"><button id="lt" class="translate"><img
+                                                    src="assets/images/languages/lt.png" alt="ltflag" width="40px"
+                                                    height="30px"></button></a></li>
+                                    <li><a class="header-item-lang-ru" href="#"><button id="ru" class="translate"><img
+                                                    src="assets/images/languages/ru.png" alt="ruflag" width="40px"
+                                                    height="30px"></button></a></li>
+                                    <li><a class="header-item-lang-en" href="#"><button id="en" class="translate"><img
+                                                    src="assets/images/languages/en.png" alt="enflag" width="40px"
+                                                    height="30px"></button></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <nav class="nav" id="nav">
+                        <a class="nav__link  lang" href="#" data-scroll="#swiper" key="gallery">Галерея</a>
+                        <a class="nav__link  lang" href="#" data-scroll="#clients" key="clients">Отзывы</a>
+                        <a class="nav__link  lang" href="#" data-scroll="#mission" key="mission">О нас</a>
+                        <a class="nav__link  lang" href="#" data-scroll="#price" key="price">Цены</a>
+                        <a class="nav__link  lang" href="#" data-scroll="#questions" key="questions">Вопросы</a>
+                        <a class="nav__link  lang" href="contacts.html" key="contacts">Наши контакты</a>
+
+                        <nav class="lang-menu">
+                            <ul>
+                                <li>
+                                    <div class="lang-menu__div">
+                                        <a href="#"><button class="translate" disabled><img src="assets/images/languages/languages.svg" alt="ruflag" width="40px" height="40px"></button></a>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                    <ul class="languages-menu">
+                                        <li><a class="header-item-lang-lt" href="#"><button id="lt"
+                                                    class="translate"><img src="assets/images/languages/lt.png"
+                                                        alt="ltflag" width="40px" height="30px"></button></a></li>
+                                        <li><a class="header-item-lang-ru" href="#"><button id="ru"
+                                                    class="translate"><img src="assets/images/languages/ru.png"
+                                                        alt="ruflag" width="40px" height="30px"></button></a></li>
+                                        <li><a class="header-item-lang-en" href="#"><button id="en"
+                                                    class="translate"><img src="assets/images/languages/en.png"
+                                                        alt="enflag" width="40px" height="30px"></button></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </nav>
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">2</span>
+                        <span class="burger__line">3</span>
+                        <span class="burger__line">4</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Intro -->
+
+        <div class="intro" id="intro">
+
+            <div class="intro__slider" id="introSlider">
+                <!-- img bg intro -->
+                <div class="slider-item">
+                    <div class="intro__slider-item" style="background-image: url(assets/images/intro-bg-2.jpeg)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__text" data-aos="fade-left">
+                        <h1 class="intro__title">
+                            <span class="intro__title-lt">Art</span>Pyro<br>Gallery
+                        </h1>
+                        <div class="intro__info__div">
+                            <h3 class="intro__info  lang" key="intro__info">Выжигание картин по фотографии</h3>
+                        </div>
+                    </div>
+                </div><!-- /.intro__inner -->
+
+            </div><!-- /.container -->
+        </div>
+
+
+
+        <!-- Gallery -->
+
+        <section class="swiper-section  section  section--coffee" id="swiper" data-scrollspy="#swiper">
+            <div class="container" id="first-gallery__container">
+                <h2 class="section__title  lang" key="gallery__h2"><span class="section__title__span">Портреты</span> по Вашей
+                    фотографии</h2>
+                    <p class="section__subtitle  lang" key="gallery__p">Примеры наших работ:</p>
+                <div class="swiper-container  mySwiper" data-aos="fade-right">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 3.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 4.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 5.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 6.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 7.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 8.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 9.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 10.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 11.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/portret 12.jpeg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="buy__under-gallery">
+                    <button class="btn  btn--orange  btn--shadow" type="button" data-modal="#becomeClientModal" data-aos=flip-down>
+                        <span class="lang" key="btn--orange">Заказать портрет</span>
+                    </button>
+                </div>
+            </div><!-- /.container -->
+            
+            <div class="container" id="last-gallery__container">
+                <h2 class="section__title  lang" key="gallery__h2-2"><span class="section__title__span">Интерьерные</span> готовые картины</h2>
+                <div class="swiper-container mySwiper" data-aos="fade-right">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 3.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 4.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 5.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 6.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img class="lazyload" data-src="assets/images/pictures/inter 7.jpeg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!-- /.container -->
+            <div class="buy__under-gallery">
+                <a class="btn  btn--orange  btn--shadow  lang" href="shop.html" data-aos=flip-down>Купить картину</a>
+            </div>
+        </section>
+
+
+
+        <!-- Clients -->
+
+        <section class="section  section--map" id="clients" data-scrollspy="#clients">
+            <div class="container">
+                <h2 class="section__title  lang" key="clients__h2"><span class="section__title__span">Отзывы</span>
+                    покупателей</h2>
+                <div class="clients">
+                    <div class="clients__reviews">
+                        <div class="reviews" id="reviewsSlider">
+
+                            <div class="reviews__item">
+                                <div class="reviews__header">
+                                    <img class="lazyload  reviews__photo" data-src="assets/images/anonim.jpg" alt="">
+                                    <div class="reviews__header-content">
+                                        <div class="reviews__name  lang" data-aos="fade-down4" key="name">Andrey</div>
+                                        <div class="reviews__company  lang" data-aos="fade-down2" key="country">Russia
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__content" data-aos="fade-right2">
+                                    <p>I am very happy with this picture!) In the hands, it looks much better than in the photo. It's nice wood in your hands. The packaging was just great. I haven't seen a seal made of sealing wax for a long time. Very beautiful!</p>
+                                    <p>Thank you to the master of this store! I recommend this hold natural store!</p>
+                                </div>
+                            </div>
+
+                        </div><!-- /.reviews -->
+                    </div><!-- /.clients__reviews -->
+                </div><!-- /.clients -->
+
+                <button class="btn  btn--orange  btn--shadow" type="button" data-modal="#becomeClientModal"
+                    data-aos=flip-down>
+                    <span class="lang" key="btn--orange">Заказать портрет</span>
+                </button>
+                <span class="clients-love  lang" key="clients-love">мы любим своих клиентов</span>
+            </div><!-- /.container -->
+        </section>
+
+
+
+        <!-- Mission -->
+
+        <section class="section  section--coffee" id="mission" data-scrollspy="#mission">
+            <div class="container">
+                <h2 class="mission-title  lang" key="mission-title">Почему мы?</h2>
+                <div class="mission" data-aos="fade-up" data-aos-duration="1250">
+                    <h3 class="mission__title  lang" key="mission__h3">Мы очень ценим и прислушиваемся к мнению покупателей</h3>
+                    <div class="mission__subtitle__div">
+                        <div>
+                            <h4 class="mission__subtitle  lang" key="mission__h4">
+                                ● К каждому клиенту и его запросам мы подходим индивидуально
+                            </h4>
+                            <h4 class="mission__subtitle  lang" key="mission__h4-2">
+                                ● Каждую работу мы стараемся выполнить с максимально возможным качеством
+                            </h4>
+                            <h4 class="mission__subtitle  lang" key="mission__h4-3">
+                                ● Мы крайне тщательно подходим к выбору исходного материала для достижения высокого
+                                качества работы
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn  btn--orange  btn--shadow" type="button" data-modal="#becomeClientModal"
+                        data-aos=flip-down>
+                        <span class="lang" key="btn--orange">Заказать портрет</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Price -->
+
+        <section class="section" data-scrollspy="#price" id="price">
+            <div class="container">
+                <h2 class="section__title  lang" key="section-price__title"><span
+                        class="section__title__span">Цены</span> на изделия</h2>
+                <div class="table__div" data-aos="zoom-in-down">
+                    <table class="price__table">
+                        <tr class="tabletr1">
+                            <td></td>
+                            <td class="lang" key="tabletr1__td-1">200х300 мм</td>
+                            <td class="lang" key="tabletr1__td-2">300х400 мм</td>
+                            <td class="lang" key="tabletr1__td-3">400х600 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletd2  lang" key="tabletd2-1">Выжженные картины</td>
+                            <td class="tabletd2">30 &euro;</td>
+                            <td class="tabletd2">50 &euro;</td>
+                            <td class="tabletd2">90 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletd2  lang" key="tabletd2-2">Интерьерные картины</td>
+                            <td class="tabletd2">-</td>
+                            <td class="tabletd2">45 &euro;</td>
+                            <td class="tabletd2">80 &euro;</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3 class="arrows-left-right">⇆</h3>
+                <!-- <div class="table__div" data-aos="zoom-in-down">
+                    <table class="price__table">
+                        <tr class="tabletr1">
+                            <td>600x400</td>
+                            <td>2 картины</td>
+                            <td>3 картины</td>
+                            <td>4 картины</td>
+                        </tr>
+                        <tr>
+                            <td class="tabletd2">Коллаж</td>
+                            <td class="tabletd2">80 &euro;</td>
+                            <td class="tabletd2">120 &euro;</td>
+                            <td class="tabletd2">160 &euro;</td>
+                        </tr>
+                    </table>
+                </div> -->
+            </div>
+        </section>
+
+
+
+
+        <!-- Questions -->
+
+        <section class="section  section--coffee" id="questions" data-scrollspy="#questions">
+            <div class="container">
+                <div class="questions">
+                    <h2 class="questions__main-title  lang" key="questions__main-title-1">Вопросы</h2>
+
+                    <div class="questions__item" data-aos="fade-down4">
+                        <h4 class="questions__title  lang" key="questions__title-1">Какие есть способы оплаты?</h4>
+                        <div class="questions__text">
+                            <p class="lang" key="questions__text-1">Мы принимаем оплату с PayPal, Master Card, Visa и наличными деньгами.</p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item" data-aos="fade-down3" data-aos-delay="50">
+                        <h4 class="questions__title  lang" key="questions__title-2">Хрупким ли получается изделие?</h4>
+                        <div class="questions__text">
+                            <p class="lang" key="questions__text-2">Мы выжигаем картины на фанере толщиной в 6 мм.
+                                Поэтому нет, изделие достаточно твёрдое, но оно не предназначено для прочих целей.</p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item" data-aos="fade-down2" data-aos-delay="100">
+                        <h4 class="questions__title  lang" key="questions__title-3">У картины имеются резкие запахи?
+                        </h4>
+                        <div class="questions__text">
+                            <p class="lang" key="questions__text-3">Нет, в создании наших изделий используются только
+                                натуральные материалы. Картины имеют запах берёзовой фанеры.</p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item" data-aos="fade-down1" data-aos-delay="150">
+                        <h4 class="questions__title  lang" key="questions__title-4">Есть ли доставка?</h4>
+                        <div class="questions__text">
+                            <p class="lang" key="questions__text-4">Да, доставить изделия можем в любую страну и в любой город. Доставка в город Клайпеда бесплатная. Учтите, доставка в стоимость картины не входит.</p>
+                        </div>
+                    </div>
+
+                    <div class="questions-button">
+                        <a class="btn  btn--orange  btn--shadow  questions__footer  a-width" href="questions.html"
+                            data-aos=flip-down>
+                            <span class="lang" key="questions-button-1">Читать далее</span>
+                        </a>
+                    </div>
+                </div><!-- /.questions -->
+            </div><!-- /.container -->
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="banks">
+                    <div class="banks__inner">
+                        <div class="bnk  bank-block1"></div>
+                        <div class="bnk  bank-block2"></div>
+                        <div class="bnk  bank-block3"></div>
+                        <div class="bnk  bank-block4"></div>
+                    </div>
+                </div>
+                <img src="assets/images/site-logo.png" width="70px" height="70px" alt="PyroGallery">
+                <address class="footer__contacts">
+                    <p>Klaipeda, Lithiania</p>
+                    <p>
+                        Call Us: <a href="tel:+37061761639">+37061761639</a> or
+                        E-mail: <a href="mailto:pyrogallery.lt@yahoo.com">pyrogallery.lt@yahoo.com</a> <br>
+                        Website developer: <a href="mailto:aleks.anashin@gmail.com">aleks.anashin@gmail.com</a>
+                    </p><br>
+                    <p class="lang" key="copy">Копирование материалов сайта запрещено. Нарушение авторских прав влечёт
+                        за собой уголовную ответственность.</p>
+                    <p class="lang" key="copy-2">&copy; 2021-2021 Pyro Gallery. Все права защищены.</p>
+                </address>
+
+                <nav class="footer__nav">
+                    <a href="privacy.html" class="a-privacy">Политика конфиденциальности</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Modals -->
+
+    <div class="modal" id="becomeClientModal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h4 class="modal__title  lang" key="modal__title__h4">Свяжитесь с нами</h4>
+                    <div class="modal__text">
+                        <p class="lang" key="modal__p">Если хотите оформить заказ, впишите данные в форме ниже. Ответ получите на почту в течение нескольких часов.</p>
+                    </div>
+                </div>
+
+                <form class="form  SendMail" method="POST" enctype="multipart/form-data">
+                    <div class="form__group">
+                        <input class="input  input--dark  input--user  lang" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form__group">
+                        <input class="input  input--dark  input--email  lang" type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form__group">
+                        <input class="input  input--dark  input--email  lang" type="text" name="message" placeholder="Message" required>
+                    </div>
+                    <input class="file-put" type="file" name="file" value="Файл" multiple required>
+                    <div class="g-recaptcha" data-sitekey="6LcL4YUbAAAAADlWDELZ06I3Kozx8SZAnWvLIqY0"></div>
+                    <button class="btn  btn--block  btn--orange  lang" type="submit">
+                        <span class="lang" key="btn-send">Отправить</span>
+                    </button>
+                </form>
+
+                <div class="modal__footer">
+                    <h4 class="modal__footer-title  lang" key="our-contacts">Наши контакты</h4>
+                    <address class="modal__contacts">
+                        <p>Klaipeda, Lithuania</p>
+                        <p>Phone: <a href="tel:+37061761639">+37061761639</a></p>
+                        <p>E-mail: <a href="mailto:pyrogallery.lt@yahoo.com">pyrogallery.lt@yahoo.com</a></p>
+                        <p>Website developer: <a href="mailto:aleks.anashin@gmail.com">aleks.anashin@gmail.com</a></p>
+                    </address>
+                </div>
+
+                <button class="modal__close" type="button" data-modal-close>
+                    <img src="assets/images/close.svg" alt="Close">
+                </button>
+            </div> <!-- /.modal__content -->
+        </div> <!-- /.modal__inner -->
+    </div> <!-- /.modal -->
+
+    <div class="modal" id="thanksModal">
+        <div class="modal__inner">
+            <div class="modal__header  upgrade">
+                <img class="modal__icon" src="assets/images/tick.svg" alt="">
+                <h4 class="modal__title">Спасибо Вам за заявку!</h4>
+                <div class="modal__text">
+                    <p>Ожидайте ответ на почте.</p>
+                </div>
+                <div class="modal__footer">
+                    <h4 class="modal__footer-title">Наши контакты</h4>
+                    <address class="modal__contacts">
+                        <p>Klaipeda, Lithuania</p>
+                        <p>Phone: <a href="tel:+37061761639">+37061761639</a></p>
+                        <p>E-mail: <a href="mailto:pyrogallery.lt@yahoo.com">pyrogallery.lt@yahoo.com</a></p>
+                        <p>Website developer: <a href="mailto:aleks.anashin@gmail.com">aleks.anashin@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+        </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
+
+    <div class="modal" id="development">
+        <div class="modal__inner">
+            <div class="modal__header  upgrade  development-upgrade">
+                <img class="modal__icon" src="assets/images/warning.png" width="68px" height="68px" alt="">
+                <h4 class="modal__title">На сайте ведутся технические работы</h4>
+                <div class="modal__text">
+                    <p>Приносим извинения за доставленные неудобства! Возможны проблемы во время пользования сайтом на данный момент.<br>Благодарим за понимание</p>
+                </div>
+                <div class="modal__footer">
+                    <h4 class="modal__footer-title">Наши контакты</h4>
+                    <address class="modal__contacts">
+                        <p>Klaipeda, Lithuania</p>
+                        <p>Phone: <a href="tel:+37061761639">+37061761639</a></p>
+                        <p>E-mail: <a href="mailto:pyrogallery.lt@yahoo.com">pyrogallery.lt@yahoo.com</a></p>
+                        <p>Website developer: <a href="mailto:aleks.anashin@gmail.com">aleks.anashin@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+        </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+</body>
+</html>
